@@ -32,4 +32,13 @@ describe('User Reducer', () => {
       }
     });
   });
+
+  it('should return state with an unkown action', () => {
+    const action = { type: 'HEY DONT YOU DARE' };
+    const state = { user: null, loading: true };
+
+    const newState = reducer(state, action);
+
+    expect(newState).toEqual({ user: null, loading: true });
+  });
 });

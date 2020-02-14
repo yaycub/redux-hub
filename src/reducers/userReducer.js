@@ -12,5 +12,7 @@ export default function userReducer(state = initialState, action){
       return { ...state, loading: true };
     case FETCH_USER:
       return { ...state, user: action.payload, loading: false };
+    default: 
+      return state;
   }
 }
