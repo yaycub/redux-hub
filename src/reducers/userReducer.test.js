@@ -1,4 +1,3 @@
-
 import reducer from './userReducer';
 import { FETCH_USER_LOADING, FETCH_USER } from '../actions/userActions';
 
