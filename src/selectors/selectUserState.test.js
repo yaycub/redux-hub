@@ -1,4 +1,4 @@
-import { selectUserState, selectUserLoadingState } from './selectUserState';
+import { selectUserState, selectUserLoadingState, selectUserSearchState } from './selectUserState';
 
 describe('User State Selector', () => {
   it('should select user from state', () => {
@@ -25,5 +25,15 @@ describe('User State Selector', () => {
     };
 
     expect(selectUserLoadingState(state)).toEqual(true);
+  });
+
+  it('should select search from UserData', () => {
+    const state = {
+      userData: {
+        search: 'yaycub'
+      }
+    };
+
+    expect(selectUserSearchState(state)).toEqual('yaycub');
   });
 });
