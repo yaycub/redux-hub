@@ -6,10 +6,10 @@ export const getUser = (user) => {
 
       return json;
     })
-    .then(({ login, followers, following, url }) => ({
+    .then(({ login, followers, following, html_url }) => ({
       name: login,
       followers,
       following,
-      url
+      url: html_url
     }));
 };
