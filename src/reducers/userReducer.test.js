@@ -1,5 +1,6 @@
-import { FETCH_USER_LOADING, FETCH_USER } from '../userActions';
+
 import reducer from './userReducer';
+import { FETCH_USER_LOADING, FETCH_USER } from '../actions/userActions';
 
 describe('User Reducer', () => {
   it('should set loading state with Fetch User Loading action', () => {
