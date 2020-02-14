@@ -1,5 +1,5 @@
 import reducer from './userReducer';
-import { FETCH_USER_LOADING, FETCH_USER } from '../actions/userActions';
+import { FETCH_USER_LOADING, FETCH_USER, SET_SEARCH } from '../actions/userActions';
 
 describe('User Reducer', () => {
   it('should set loading state with Fetch User Loading action', () => {
@@ -39,5 +39,14 @@ describe('User Reducer', () => {
     const newState = reducer(state, action);
 
     expect(newState).toEqual({ user: null, loading: true });
+  });
+
+  it('should set search with setSearch action', () => {
+    const action = { type: SET_SEARCH, payload: 'yaycub' };
+    const state = { search: 'original search' };
+
+    const newState = reducer(state, action);
+
+    expect(newState).toEqual({ search: 'yaycub' });
   });
 });
