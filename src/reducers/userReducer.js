@@ -2,7 +2,12 @@ import { FETCH_USER_LOADING, FETCH_USER } from '../actions/userActions';
 
 const initialState = {
   loading: true,
-  user: null
+  user: {
+    name: '',
+    followers: '',
+    following: '',
+    url: ''
+  }
 };
 
 

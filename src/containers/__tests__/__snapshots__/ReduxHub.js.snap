@@ -27,6 +27,11 @@ exports[`Redux Hub container should render Redux Hub 1`] = `
         </button>
       </form>
     </SearchForm>
+    <UserInfo>
+      <p>
+        Loading...
+      </p>
+    </UserInfo>
   </ReduxHub>
 </Provider>
 `;
