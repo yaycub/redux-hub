@@ -10,3 +10,9 @@ export const fetchUser = user => dispatch =>  {
       payload: user
     }));
 };
+
+export const SET_SEARCH = 'SET_SEACH';
+export const setSearch = user => ({
+  type: SET_SEARCH,
+  payload: user
+});
