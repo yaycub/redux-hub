@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { fetchUser } from '../../actions/userActions';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchUser, setSearch } from '../../actions/userActions';
+import { selectUserSearchState } from '../../selectors/selectUserState';
 
 const SearchForm = () => {
-  const [search, setSearch] = useState('Please Enter a Username');
+  const search = useSelector(selectUserSearchState);
   const dispatch = useDispatch();
 
   const handleSubmit = event => {
@@ -16,7 +17,7 @@ const SearchForm = () => {
       <input 
         type="text" 
         value={search} 
-        onChange={({ target }) => setSearch(target.value)} />
+        onChange={({ target }) => dispatch(setSearch(target.value))} />
       <button>Search User</button>
     </form>
   );
