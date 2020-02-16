@@ -1,4 +1,4 @@
-import { FETCH_USER_LOADING, FETCH_USER, SET_SEARCH } from '../actions/userActions';
+import { FETCH_USER_LOADING, FETCH_USER } from '../actions/userActions';
 
 const initialState = {
   loading: true,
@@ -7,8 +7,7 @@ const initialState = {
     followers: '',
     following: '',
     url: ''
-  },
-  search: 'Github UserName'
+  }
 };
 
 
@@ -18,8 +17,6 @@ export default function userReducer(state = initialState, action){
       return { ...state, loading: true };
     case FETCH_USER:
       return { ...state, user: action.payload, loading: false };
-    case SET_SEARCH:
-      return { ...state, search: action.payload };
     default: 
       return state;
   }

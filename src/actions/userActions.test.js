@@ -21,12 +21,4 @@ describe('User Actions', () => {
         });
       });
   });
-
-  it('should create a set user action', () => {
-    const action = setSearch('hey there');
-    expect(action).toEqual({
-      type: SET_SEARCH,
-      payload: 'hey there'
-    });
-  });
 });

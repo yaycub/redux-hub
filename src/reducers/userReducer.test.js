@@ -40,13 +40,4 @@ describe('User Reducer', () => {
 
     expect(newState).toEqual({ user: null, loading: true });
   });
-
-  it('should set search with setSearch action', () => {
-    const action = { type: SET_SEARCH, payload: 'yaycub' };
-    const state = { search: 'original search' };
-
-    const newState = reducer(state, action);
-
-    expect(newState).toEqual({ search: 'yaycub' });
-  });
 });

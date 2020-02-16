@@ -1,10 +1,9 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchUser, setSearch } from '../../actions/userActions';
-import { selectUserSearchState } from '../../selectors/selectUserState';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchUser } from '../../actions/userActions';
 
 const SearchForm = () => {
-  const search = useSelector(selectUserSearchState);
+  const [search, setSearch] = useState('Github UserName');
   const dispatch = useDispatch();
 
   const handleSubmit = event => {
