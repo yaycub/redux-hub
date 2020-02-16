@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Form Component should render Search Form 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <SearchForm>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        type="text"
+        value="Github UserName"
+      />
+      <button>
+        Search User
+      </button>
+    </form>
+  </SearchForm>
+</Provider>
+`;

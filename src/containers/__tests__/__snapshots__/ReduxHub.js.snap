@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redux Hub container should render Redux Hub 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ReduxHub>
+    <SearchForm>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          onChange={[Function]}
+          type="text"
+          value="Github UserName"
+        />
+        <button>
+          Search User
+        </button>
+      </form>
+    </SearchForm>
+    <UserInfo>
+      <p>
+        User info will display here
+      </p>
+    </UserInfo>
+    <Repos>
+      <ul />
+    </Repos>
+  </ReduxHub>
+</Provider>
+`;
