@@ -11,7 +11,7 @@ const UserInfo = () => {
 
   const loading = useSelector(selectUserLoadingState);
 
-  if(loading) return <p>Loading...</p>;
+  if(loading) return <p>User info will display here</p>;
 
   return (
     <section>

@@ -18,7 +18,7 @@ const SearchForm = () => {
       <input 
         type="text" 
         value={search} 
-        onChange={({ target }) => dispatch(setSearch(target.value))} />
+        onChange={({ target }) => setSearch(target.value)} />
       <button>Search User</button>
     </form>
   );

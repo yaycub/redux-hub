@@ -14,7 +14,7 @@ exports[`User Info Component should render userInfo 1`] = `
 >
   <UserInfo>
     <p>
-      Loading...
+      User info will display here
     </p>
   </UserInfo>
 </Provider>

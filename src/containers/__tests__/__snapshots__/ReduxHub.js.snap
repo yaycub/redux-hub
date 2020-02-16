@@ -29,9 +29,12 @@ exports[`Redux Hub container should render Redux Hub 1`] = `
     </SearchForm>
     <UserInfo>
       <p>
-        Loading...
+        User info will display here
       </p>
     </UserInfo>
+    <Repos>
+      <ul />
+    </Repos>
   </ReduxHub>
 </Provider>
 `;
