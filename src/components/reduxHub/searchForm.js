@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUser } from '../../actions/userActions';
+import { fetchRepos } from '../../actions/repoActions';
 
 const SearchForm = () => {
   const [search, setSearch] = useState('Github UserName');
@@ -9,6 +10,7 @@ const SearchForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
     dispatch(fetchUser(search));
+    dispatch(fetchRepos(search));
   };
 
   return (
