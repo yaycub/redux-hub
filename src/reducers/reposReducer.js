@@ -2,7 +2,7 @@ import { FETCH_REPOS_LOADING, FETCH_REPOS } from '../actions/repoActions';
 
 const initialState = {
   loading: true,
-  repos: null
+  repos: []
 };
 
 export default function reposReducer(state = initialState, action){
